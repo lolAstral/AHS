@@ -27,10 +27,6 @@ local UICorner_11 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 local plr = game:GetService("Players").LocalPlayer
 
-plr.CharacterAdded:connect(function(chara)
-
-end)
-
 --Properties:
 
 ahs.Name = "ahs"
