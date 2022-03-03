@@ -137,7 +137,7 @@ Esp.TextScaled = true
 Esp.TextSize = 14.000
 Esp.TextWrapped = true
 Esp.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ArcherDevelopment/LUNAESP/main/lunaesp.lua"))
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lolAstral/astrallllllllll/main/lolll"))
 end)
 UICorner_6.Parent = Esp
 
