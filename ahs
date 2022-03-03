@@ -1,58 +1,94 @@
---made by astral lol
+--made by astral
+--https://discord.gg/cRDSP7gq2V
+--https://github.com/lolAstral
 
 local ahs = Instance.new("ScreenGui")
+local TOP = Instance.new("Frame")
 local Frame = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local Fly = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local No = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local TP = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local Speed = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local DarkDex = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local Esp = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local Schitp = Instance.new("TextLabel")
-local UICorner_7 = Instance.new("UICorner")
-local Aimbot = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local Yield = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local UICorner_10 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
-local UICorner_11 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
-local plr = game:GetService("Players").LocalPlayer
+local TextLabel_3 = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local No = Instance.new("TextButton")
+local TP = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local DarkDex = Instance.new("TextButton")
+local Aim = Instance.new("TextButton")
+local Yield = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
 
 --Properties:
 
 ahs.Name = "ahs"
 ahs.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-Frame.Parent = ahs
-Frame.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
-Frame.Position = UDim2.new(0.234529704, 0, 0.0606060587, 0)
-Frame.Size = UDim2.new(0, 552, 0, 355)
-Frame.Active = true
-Frame.Draggable = true
+TOP.Name = "TOP"
+TOP.Parent = ahs
+TOP.BackgroundColor3 = Color3.fromRGB(198, 52, 255)
+TOP.BorderColor3 = Color3.fromRGB(198, 52, 255)
+TOP.Position = UDim2.new(0.119135149, 0, 0.0854214132, 0)
+TOP.Size = UDim2.new(0, 425, 0, 30)
 
-ScrollingFrame.Parent = Frame
+Frame.Parent = TOP
+Frame.BackgroundColor3 = Color3.fromRGB(198, 52, 255)
+Frame.BorderColor3 = Color3.fromRGB(198, 52, 255)
+Frame.Position = UDim2.new(-0.000246007578, 0, 15.3862572, 0)
+Frame.Size = UDim2.new(0, 425, 0, 29)
+
+ScrollingFrame.Parent = TOP
 ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
-ScrollingFrame.BorderColor3 = Color3.fromRGB(66, 66, 66)
-ScrollingFrame.Position = UDim2.new(0.0327557549, 0, 0.160532638, 0)
-ScrollingFrame.Size = UDim2.new(0, 531, 0, 285)
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+ScrollingFrame.Position = UDim2.new(0.127582997, 0, 0.986256659, 0)
+ScrollingFrame.Size = UDim2.new(0, 315, 0, 432)
+
+TextLabel.Parent = TOP
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.127583012, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 315, 0, 29)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "AHS"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = TOP
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(-0.00182875688, 0, 15.3666668, 0)
+TextLabel_2.Size = UDim2.new(0, 148, 0, 29)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "discord.gg/cRDSP7gq2V"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = TOP
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.Position = UDim2.new(0.649935961, 0, 15.3666668, 0)
+TextLabel_3.Size = UDim2.new(0, 148, 0, 29)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Made by astral#1111"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
 
 Fly.Name = "Fly"
-Fly.Parent = ScrollingFrame
-Fly.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-Fly.Position = UDim2.new(-0.00108966604, 0, 0.014801722, 0)
-Fly.Size = UDim2.new(0, 170, 0, 40)
+Fly.Parent = ahs
+Fly.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+Fly.Position = UDim2.new(0.15222773, 0, 0.130979493, 0)
+Fly.Size = UDim2.new(0, 148, 0, 35)
 Fly.Font = Enum.Font.SourceSans
-Fly.Text = "Fly (x)"
+Fly.Text = "Fly(X)"
 Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
 Fly.TextScaled = true
 Fly.TextSize = 14.000
@@ -60,15 +96,13 @@ Fly.TextWrapped = true
 Fly.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/lolAstral/fly-script/main/fly', true))()
 end)
-UICorner.Parent = Fly
-
 No.Name = "No"
-No.Parent = ScrollingFrame
-No.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-No.Position = UDim2.new(0.6316787, 0, 0.014801722, 0)
-No.Size = UDim2.new(0, 170, 0, 40)
+No.Parent = ahs
+No.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+No.Position = UDim2.new(0.255569309, 0, 0.130979493, 0)
+No.Size = UDim2.new(0, 148, 0, 35)
 No.Font = Enum.Font.SourceSans
-No.Text = "NoClip (e)"
+No.Text = "Noclip(E)"
 No.TextColor3 = Color3.fromRGB(0, 0, 0)
 No.TextScaled = true
 No.TextSize = 14.000
@@ -76,15 +110,13 @@ No.TextWrapped = true
 No.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://github.com/lolAstral/NoClip/blob/main/noclip", true))()
 end)
-UICorner_2.Parent = No
-
 TP.Name = "TP"
-TP.Parent = ScrollingFrame
-TP.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-TP.Position = UDim2.new(-0.00108966976, 0, 0.103534117, 0)
-TP.Size = UDim2.new(0, 170, 0, 40)
+TP.Parent = ahs
+TP.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+TP.Position = UDim2.new(0.255569309, 0, 0.193621859, 0)
+TP.Size = UDim2.new(0, 148, 0, 35)
 TP.Font = Enum.Font.SourceSans
-TP.Text = "Click to tp"
+TP.Text = "Click To TP"
 TP.TextColor3 = Color3.fromRGB(0, 0, 0)
 TP.TextScaled = true
 TP.TextSize = 14.000
@@ -92,13 +124,11 @@ TP.TextWrapped = true
 TP.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/lolAstral/click-tp/main/cliti%5B", true))()
 end)
-UICorner_3.Parent = TP
-
 Speed.Name = "Speed"
-Speed.Parent = ScrollingFrame
-Speed.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-Speed.Position = UDim2.new(0.6316787, 0, 0.103534117, 0)
-Speed.Size = UDim2.new(0, 170, 0, 40)
+Speed.Parent = ahs
+Speed.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+Speed.Position = UDim2.new(0.15222773, 0, 0.193621859, 0)
+Speed.Size = UDim2.new(0, 148, 0, 35)
 Speed.Font = Enum.Font.SourceSans
 Speed.Text = "Speed"
 Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -108,13 +138,11 @@ Speed.TextWrapped = true
 Speed.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/lolAstral/speed/main/speed%20script', true))()
 end)
-UICorner_4.Parent = Speed
-
-DarkDex.Name = "Dark Dex"
-DarkDex.Parent = ScrollingFrame
-DarkDex.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-DarkDex.Position = UDim2.new(0.000793561921, 0, 0.235928491, 0)
-DarkDex.Size = UDim2.new(0, 170, 0, 40)
+DarkDex.Name = "DarkDex"
+DarkDex.Parent = ahs
+DarkDex.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+DarkDex.Position = UDim2.new(0.152846545, 0, 0.297266483, 0)
+DarkDex.Size = UDim2.new(0, 148, 0, 35)
 DarkDex.Font = Enum.Font.SourceSans
 DarkDex.Text = "Dex"
 DarkDex.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -124,13 +152,39 @@ DarkDex.TextWrapped = true
 DarkDex.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://controlc.com/548a5a33", true))()
 end)
-UICorner_5.Parent = DarkDex
-
+Aim.Name = "Aim"
+Aim.Parent = ahs
+Aim.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+Aim.Position = UDim2.new(0.256188124, 0, 0.297266483, 0)
+Aim.Size = UDim2.new(0, 148, 0, 35)
+Aim.Font = Enum.Font.SourceSans
+Aim.Text = "Aimbot"
+Aim.TextColor3 = Color3.fromRGB(0, 0, 0)
+Aim.TextScaled = true
+Aim.TextSize = 14.000
+Aim.TextWrapped = true
+Aim.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/CwQcEnEd"))()
+end)
+Yield.Name = "Yield"
+Yield.Parent = ahs
+Yield.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+Yield.Position = UDim2.new(0.152846545, 0, 0.363325715, 0)
+Yield.Size = UDim2.new(0, 148, 0, 35)
+Yield.Font = Enum.Font.SourceSans
+Yield.Text = "Inf Yield"
+Yield.TextColor3 = Color3.fromRGB(0, 0, 0)
+Yield.TextScaled = true
+Yield.TextSize = 14.000
+Yield.TextWrapped = true
+Yield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 Esp.Name = "Esp"
-Esp.Parent = ScrollingFrame
-Esp.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-Esp.Position = UDim2.new(0.631678641, 0, 0.235928491, 0)
-Esp.Size = UDim2.new(0, 170, 0, 40)
+Esp.Parent = ahs
+Esp.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+Esp.Position = UDim2.new(0.256188124, 0, 0.363325715, 0)
+Esp.Size = UDim2.new(0, 148, 0, 35)
 Esp.Font = Enum.Font.SourceSans
 Esp.Text = "Esp"
 Esp.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -140,76 +194,16 @@ Esp.TextWrapped = true
 Esp.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/lolAstral/astrallllllllll/main/lolll"))
 end)
-UICorner_6.Parent = Esp
-
-Schitp.Name = "Schitp"
-Schitp.Parent = ScrollingFrame
-Schitp.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-Schitp.Position = UDim2.new(-0.0354838409, 0, 0.168845057, 0)
-Schitp.Size = UDim2.new(0, 531, 0, 32)
-Schitp.Font = Enum.Font.SourceSans
-Schitp.Text = "Script Hub"
-Schitp.TextColor3 = Color3.fromRGB(0, 0, 0)
-Schitp.TextScaled = true
-Schitp.TextSize = 14.000
-Schitp.TextWrapped = true
-
-UICorner_7.Parent = Schitp
-
-Aimbot.Name = "Aimbot"
-Aimbot.Parent = ScrollingFrame
-Aimbot.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-Aimbot.Position = UDim2.new(0.000793516636, 0, 0.307759464, 0)
-Aimbot.Size = UDim2.new(0, 170, 0, 40)
-Aimbot.Font = Enum.Font.SourceSans
-Aimbot.Text = "Aimbot"
-Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
-Aimbot.TextScaled = true
-Aimbot.TextSize = 14.000
-Aimbot.TextWrapped = true
-Aimbot.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/CwQcEnEd"))()
+TextButton.Parent = ahs
+TextButton.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+TextButton.Position = UDim2.new(0.152846545, 0, 0.431662858, 0)
+TextButton.Size = UDim2.new(0, 148, 0, 35)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "OwlHub(esp & aimbot)"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end)
-UICorner_8.Parent = Aimbot
-
-Yield.Name = "Yield"
-Yield.Parent = ScrollingFrame
-Yield.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-Yield.Position = UDim2.new(0.631678641, 0, 0.306351036, 0)
-Yield.Size = UDim2.new(0, 170, 0, 40)
-Yield.Font = Enum.Font.SourceSans
-Yield.Text = "Inf yield"
-Yield.TextColor3 = Color3.fromRGB(0, 0, 0)
-Yield.TextScaled = true
-Yield.TextSize = 14.000
-Yield.TextWrapped = true
-Yield.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-UICorner_9.Parent = Yield
-
-UICorner_10.Parent = Frame
-
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-TextLabel.Position = UDim2.new(0.0341960527, 0, 0.0208109245, 0)
-TextLabel.Size = UDim2.new(0, 531, 0, 42)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "ahs Hub"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-UICorner_11.Parent = TextLabel
-
-TextLabel_2.Parent = ahs
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.392115325, 0, 0.0812121257, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "Made by astral#1111"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 14.000
-
