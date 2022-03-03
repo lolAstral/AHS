@@ -1,6 +1,4 @@
---made by astral
---https://discord.gg/cRDSP7gq2V
---https://github.com/lolAstral
+--made by astral#1111
 
 local ahs = Instance.new("ScreenGui")
 local TOP = Instance.new("Frame")
@@ -30,18 +28,25 @@ TOP.BackgroundColor3 = Color3.fromRGB(198, 52, 255)
 TOP.BorderColor3 = Color3.fromRGB(198, 52, 255)
 TOP.Position = UDim2.new(0.119135149, 0, 0.0854214132, 0)
 TOP.Size = UDim2.new(0, 425, 0, 30)
+TOP.Active = true
+TOP.Draggable = true
 
 Frame.Parent = TOP
 Frame.BackgroundColor3 = Color3.fromRGB(198, 52, 255)
 Frame.BorderColor3 = Color3.fromRGB(198, 52, 255)
 Frame.Position = UDim2.new(-0.000246007578, 0, 15.3862572, 0)
 Frame.Size = UDim2.new(0, 425, 0, 29)
+Frame.Active = true
+Frame.Draggable = true
 
 ScrollingFrame.Parent = TOP
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 ScrollingFrame.Position = UDim2.new(0.127582997, 0, 0.986256659, 0)
 ScrollingFrame.Size = UDim2.new(0, 315, 0, 432)
+ScrollingFrame.Active = true
+ScrollingFrame.Draggable = true
+
 
 TextLabel.Parent = TOP
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -99,7 +104,7 @@ end)
 No.Name = "No"
 No.Parent = ahs
 No.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-No.Position = UDim2.new(0.255569309, 0, 0.130979493, 0)
+No.Position = UDim2.new(0.23421514, 0, 0.130979493, 0)
 No.Size = UDim2.new(0, 148, 0, 35)
 No.Font = Enum.Font.SourceSans
 No.Text = "Noclip(E)"
@@ -113,7 +118,7 @@ end)
 TP.Name = "TP"
 TP.Parent = ahs
 TP.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-TP.Position = UDim2.new(0.255569309, 0, 0.193621859, 0)
+TP.Position = UDim2.new(0.23421514, 0, 0.193621859, 0)
 TP.Size = UDim2.new(0, 148, 0, 35)
 TP.Font = Enum.Font.SourceSans
 TP.Text = "Click To TP"
@@ -155,7 +160,7 @@ end)
 Aim.Name = "Aim"
 Aim.Parent = ahs
 Aim.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-Aim.Position = UDim2.new(0.256188124, 0, 0.297266483, 0)
+Aim.Position = UDim2.new(0.23379229, 0, 0.297266483, 0)
 Aim.Size = UDim2.new(0, 148, 0, 35)
 Aim.Font = Enum.Font.SourceSans
 Aim.Text = "Aimbot"
@@ -183,7 +188,7 @@ end)
 Esp.Name = "Esp"
 Esp.Parent = ahs
 Esp.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-Esp.Position = UDim2.new(0.256188124, 0, 0.363325715, 0)
+Esp.Position = UDim2.new(0.23431313, 0, 0.363325715, 0)
 Esp.Size = UDim2.new(0, 148, 0, 35)
 Esp.Font = Enum.Font.SourceSans
 Esp.Text = "Esp"
