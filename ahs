@@ -73,7 +73,7 @@ No.TextScaled = true
 No.TextSize = 14.000
 No.TextWrapped = true
 No.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://github.com/lolAstral/NoClip/blob/main/noclip", true))())
+	loadstring(game:HttpGet("https://github.com/lolAstral/NoClip/blob/main/noclip", true))()
 end)
 UICorner_2.Parent = No
 
