@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+--made by astral lol
 
 local ahs = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -38,6 +35,8 @@ Frame.Parent = ahs
 Frame.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
 Frame.Position = UDim2.new(0.234529704, 0, 0.0606060587, 0)
 Frame.Size = UDim2.new(0, 552, 0, 355)
+Frame.Active = true
+Frame.Draggable = true
 
 ScrollingFrame.Parent = Frame
 ScrollingFrame.Active = true
@@ -206,7 +205,7 @@ UICorner_11.Parent = TextLabel
 TextLabel_2.Parent = ahs
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.42388615, 0, 0.0824242458, 0)
+TextLabel_2.Position = UDim2.new(0.392115325, 0, 0.0812121257, 0)
 TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "Made by astral#1111"
