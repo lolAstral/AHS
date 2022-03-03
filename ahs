@@ -73,7 +73,7 @@ No.TextScaled = true
 No.TextSize = 14.000
 No.TextWrapped = true
 No.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/lolAstral/NoClip/main/noclip', true))()
+	loadstring(game:HttpGet("https://github.com/lolAstral/NoClip/blob/main/noclip", true))())
 end)
 UICorner_2.Parent = No
 
@@ -89,7 +89,7 @@ TP.TextScaled = true
 TP.TextSize = 14.000
 TP.TextWrapped = true
 TP.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/lolAstral/clicktotp/main/tp", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lolAstral/click-tp/main/cliti%5B", true))()
 end)
 UICorner_3.Parent = TP
 
