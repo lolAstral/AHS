@@ -1,7 +1,5 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+--https://discord.gg/cRDSP7gq2V
+--made by astral#1111
 
 local ahs = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
