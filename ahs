@@ -1,4 +1,7 @@
---made by astral#1111
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local ahs = Instance.new("ScreenGui")
 local TOP = Instance.new("Frame")
@@ -7,7 +10,6 @@ local ScrollingFrame = Instance.new("ScrollingFrame")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
-local Fly = Instance.new("TextButton")
 local No = Instance.new("TextButton")
 local TP = Instance.new("TextButton")
 local Speed = Instance.new("TextButton")
@@ -16,6 +18,7 @@ local Aim = Instance.new("TextButton")
 local Yield = Instance.new("TextButton")
 local Esp = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
 
 --Properties:
 
@@ -31,22 +34,18 @@ TOP.Size = UDim2.new(0, 425, 0, 30)
 TOP.Active = true
 TOP.Draggable = true
 
+
 Frame.Parent = TOP
 Frame.BackgroundColor3 = Color3.fromRGB(198, 52, 255)
 Frame.BorderColor3 = Color3.fromRGB(198, 52, 255)
 Frame.Position = UDim2.new(-0.000246007578, 0, 15.3862572, 0)
 Frame.Size = UDim2.new(0, 425, 0, 29)
-Frame.Active = true
-Frame.Draggable = true
 
 ScrollingFrame.Parent = TOP
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 ScrollingFrame.Position = UDim2.new(0.127582997, 0, 0.986256659, 0)
 ScrollingFrame.Size = UDim2.new(0, 315, 0, 432)
-ScrollingFrame.Active = true
-ScrollingFrame.Draggable = true
-
 
 TextLabel.Parent = TOP
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -87,24 +86,10 @@ TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
-Fly.Name = "Fly"
-Fly.Parent = ahs
-Fly.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-Fly.Position = UDim2.new(0.15222773, 0, 0.130979493, 0)
-Fly.Size = UDim2.new(0, 148, 0, 35)
-Fly.Font = Enum.Font.SourceSans
-Fly.Text = "Fly(X)"
-Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
-Fly.TextScaled = true
-Fly.TextSize = 14.000
-Fly.TextWrapped = true
-Fly.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/lolAstral/fly-script/main/fly', true))()
-end)
 No.Name = "No"
-No.Parent = ahs
+No.Parent = TOP
 No.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-No.Position = UDim2.new(0.23421514, 0, 0.130979493, 0)
+No.Position = UDim2.new(0.518921018, 0, 1.46431291, 0)
 No.Size = UDim2.new(0, 148, 0, 35)
 No.Font = Enum.Font.SourceSans
 No.Text = "Noclip(E)"
@@ -113,12 +98,12 @@ No.TextScaled = true
 No.TextSize = 14.000
 No.TextWrapped = true
 No.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://github.com/lolAstral/NoClip/blob/main/noclip", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lolAstral/NoClip/main/noclip", true))()
 end)
 TP.Name = "TP"
-TP.Parent = ahs
+TP.Parent = TOP
 TP.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-TP.Position = UDim2.new(0.23421514, 0, 0.193621859, 0)
+TP.Position = UDim2.new(0.518921018, 0, 3.26028872, 0)
 TP.Size = UDim2.new(0, 148, 0, 35)
 TP.Font = Enum.Font.SourceSans
 TP.Text = "Click To TP"
@@ -130,9 +115,9 @@ TP.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/lolAstral/click-tp/main/cliti%5B", true))()
 end)
 Speed.Name = "Speed"
-Speed.Parent = ahs
+Speed.Parent = TOP
 Speed.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-Speed.Position = UDim2.new(0.15222773, 0, 0.193621859, 0)
+Speed.Position = UDim2.new(0.126345396, 0, 3.26028848, 0)
 Speed.Size = UDim2.new(0, 148, 0, 35)
 Speed.Font = Enum.Font.SourceSans
 Speed.Text = "Speed"
@@ -144,9 +129,9 @@ Speed.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/lolAstral/speed/main/speed%20script', true))()
 end)
 DarkDex.Name = "DarkDex"
-DarkDex.Parent = ahs
+DarkDex.Parent = TOP
 DarkDex.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-DarkDex.Position = UDim2.new(0.152846545, 0, 0.297266483, 0)
+DarkDex.Position = UDim2.new(0.519905329, 0, 6.56393337, 0)
 DarkDex.Size = UDim2.new(0, 148, 0, 35)
 DarkDex.Font = Enum.Font.SourceSans
 DarkDex.Text = "Dex"
@@ -155,12 +140,12 @@ DarkDex.TextScaled = true
 DarkDex.TextSize = 14.000
 DarkDex.TextWrapped = true
 DarkDex.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://controlc.com/548a5a33", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lolAstral/dex/main/notmine", true))()
 end)
 Aim.Name = "Aim"
-Aim.Parent = ahs
+Aim.Parent = TOP
 Aim.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-Aim.Position = UDim2.new(0.23379229, 0, 0.297266483, 0)
+Aim.Position = UDim2.new(0.518498182, 0, 8.2305994, 0)
 Aim.Size = UDim2.new(0, 148, 0, 35)
 Aim.Font = Enum.Font.SourceSans
 Aim.Text = "Aimbot"
@@ -172,9 +157,9 @@ Aim.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/CwQcEnEd"))()
 end)
 Yield.Name = "Yield"
-Yield.Parent = ahs
+Yield.Parent = TOP
 Yield.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-Yield.Position = UDim2.new(0.152846545, 0, 0.363325715, 0)
+Yield.Position = UDim2.new(0.126964182, 0, 6.59665871, 0)
 Yield.Size = UDim2.new(0, 148, 0, 35)
 Yield.Font = Enum.Font.SourceSans
 Yield.Text = "Inf Yield"
@@ -186,9 +171,9 @@ Yield.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 Esp.Name = "Esp"
-Esp.Parent = ahs
+Esp.Parent = TOP
 Esp.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-Esp.Position = UDim2.new(0.23431313, 0, 0.363325715, 0)
+Esp.Position = UDim2.new(0.126077801, 0, 9.92999172, 0)
 Esp.Size = UDim2.new(0, 148, 0, 35)
 Esp.Font = Enum.Font.SourceSans
 Esp.Text = "Esp"
@@ -199,9 +184,9 @@ Esp.TextWrapped = true
 Esp.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/lolAstral/astrallllllllll/main/lolll"))
 end)
-TextButton.Parent = ahs
+TextButton.Parent = TOP
 TextButton.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
-TextButton.Position = UDim2.new(0.152846545, 0, 0.431662858, 0)
+TextButton.Position = UDim2.new(0.126964182, 0, 8.23166275, 0)
 TextButton.Size = UDim2.new(0, 148, 0, 35)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "OwlHub(esp & aimbot)"
@@ -211,4 +196,18 @@ TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+Fly.Name = "Fly"
+Fly.Parent = TOP
+Fly.BackgroundColor3 = Color3.fromRGB(122, 32, 157)
+Fly.Position = UDim2.new(0.126345366, 0, 1.46431291, 0)
+Fly.Size = UDim2.new(0, 148, 0, 35)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly(X)"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+Fly.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lolAstral/fly-script/main/fly', true))()
 end)
