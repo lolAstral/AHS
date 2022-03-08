@@ -40,7 +40,7 @@ btns:Button("BTOOLS", function()
 	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
 end)
 
-local btns = serv:Channel("ScriptHub")
+local btns = serv:Channel("Script Hub")
 
 btns:Button("Darkhub", function()
 	DiscordLib:Notification("Notification", "(DOWN)", "Aw:((")
@@ -56,7 +56,52 @@ btns:Button("Dark Dex", function()
 	DiscordLib:Notification("Notification", "Dark Dex Injected", "Okay!")
 	loadstring(game:HttpGet('https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4'))()
 end) 
- 
+
+local btns = serv:Channel("Da hood Scripts")
+
+btns:Button("Boxware", function()
+	DiscordLib:Notification("Notification", "BoxWare Injected", "Okay!")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/crypthook/some-shit-script-crack/main/boxware"))()
+end) 
+
+btns:Button("SpaceWare", function()
+	DiscordLib:Notification("Notification", "SpaceWare Injected", "Okay!")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Maxiiiiiiiiiiiiiiiiiiiiiii/spaceware/main/spaceware'))()
+end) 
+
+btns:Button("Faded", function()
+	DiscordLib:Notification("Notification", "Faded Injected", "Okay!")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/nighter132/Faded/main/YesEpic", true))()
+end) 
+
+btns:Button("Diamg X", function()
+	DiscordLib:Notification("Notification", "Diamg X Injected", "Okay!")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lolAstral/diamg/main/lol'))()
+end) 
+
+btns:Button("Arctic", function()
+	DiscordLib:Notification("Notification", "Arctic Injected", "Okay!")
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
+end) 
+
+btns:Seperator()
+
+btns:Button("DHC iku script", function()
+	DiscordLib:Notification("Notification", "IKu Injected", "Okay!")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/roblox-scripts/main/DHC/SimpleSeller.lua', true))()
+end) 
+
+
+local lbls = serv:Channel("Credits To The Scripts")
+lbls:Label("SpaceWare discord.gg/Mrt3BP5Bfe / discord.gg/spaceware")
+lbls:Label("BoxWare(i couldn't find the orginal owners when i do i will update it)")
+lbls:Label("Faded i could find there server buts in prob in there gui")
+lbls:Label("Diamg X  discord.gg/TQtCzKdkNH")
+lbls:Label("Arctic   discord.gg/arcticW")
+lbls:Label("Iku   discord.gg/iku DHC")
+
+
+
 local lbls = serv:Channel("Credits")
 
 lbls:Label("Astral#1111")
@@ -64,38 +109,3 @@ lbls:Label("Solo.to/ahslol")
 lbls:Label("My Server discord.gg/cRDSP7gq2V")
 lbls:Label("Ukraine ON TOP")
 
-local GUI = nil--replace nil with the path to your gui
-
-local KeyHolding = false
-
-function fakewait(num)
- if KeyHolding == true then
-  wait(num)
- end
-end
-
-function Hold()
- coroutine.wrap(function()
-  fakewait(3)
-  if KeyHolding == true then
-   GUI.Enabled = true
-  else
-   GUI.Enabled = false
-  end
- end)()
-end
-local UIS = game:GetService("UserInputService")
-
-UIS.InputBegan:Connect(function(io,gpe)
- if gpe then return end
-  if io.KeyCode == Enum.Keycode.E then
-   KeyHolding = true
-   Hold()
-  end
- end
-end)
-UIS.InputEnded:Connect(function()
- if io.KeyCode == Enum.KeyCode.RightShift then
-  KeyHolding = false
- end
-end)
